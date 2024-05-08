@@ -1,0 +1,8 @@
+(set-logic QF_LIA)
+(declare-const x Int)
+(declare-const y Int)
+(declare-const z Bool)
+(assert (= (- x y) (+ x (- y) 1)))
+(assert z)
+(check-sat)
+(exit)

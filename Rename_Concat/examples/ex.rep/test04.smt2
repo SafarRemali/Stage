@@ -1,0 +1,8 @@
+(set-logic QF_LIA)
+(declare-fun y () Int)
+(declare-fun x () Int)
+(declare-fun y1 () Int)
+(declare-fun y2 () Int)
+(declare-fun z () Int)
+(assert (let ((.def_0 (* (- 1) y))) (let ((.def_1 (+ x .def_0 1))) (let ((.def_2 (- x y))) (let ((.def_3 (= .def_2 .def_1))) (let ((.def_4 (< y2 5))) (let ((.def_5 (< 0 y2))) (let ((.def_6 (and .def_5 .def_4))) (let ((.def_7 (= x y2))) (let ((.def_8 (= y1 z))) (let ((.def_9 (not .def_8))) (let ((.def_10 (= x y1))) (let ((.def_11 (and .def_10 .def_9 .def_7 .def_6))) (let ((.def_12 (and .def_11 .def_3))) .def_12))))))))))))))
+(check-sat)

@@ -1,0 +1,5 @@
+(set-logic QF_UF)
+(declare-const p0 Bool)
+(assert (and p0 (not p0))) 
+(check-sat)
+(exit)

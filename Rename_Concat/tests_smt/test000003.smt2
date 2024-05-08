@@ -1,0 +1,6 @@
+(set-logic QF_AUFBV )
+(declare-fun g_cardPini () (Array (_ BitVec 32) (_ BitVec 8) ) )
+(declare-fun g_userPini () (Array (_ BitVec 32) (_ BitVec 8) ) )
+(assert (and  (and  (and  (=  ((_ zero_extend 24)  (select  g_userPini (_ bv0 32) ) ) ((_ zero_extend 24)  (select  g_cardPini (_ bv0 32) ) ) ) (=  ((_ zero_extend 24)  (select  g_userPini (_ bv1 32) ) ) ((_ zero_extend 24)  (select  g_cardPini (_ bv1 32) ) ) ) ) (=  ((_ zero_extend 24)  (select  g_userPini (_ bv2 32) ) ) ((_ zero_extend 24)  (select  g_cardPini (_ bv2 32) ) ) ) ) (=  false (=  ((_ zero_extend 24)  (select  g_userPini (_ bv3 32) ) ) ((_ zero_extend 24)  (select  g_cardPini (_ bv3 32) ) ) ) ) ) )
+(check-sat)
+(exit)

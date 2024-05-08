@@ -1,0 +1,7 @@
+(set-logic QF_IDL)
+(declare-fun a () Int)
+(declare-fun y1 () Int)
+(declare-fun y2 () Int)
+(declare-fun z () Int)
+(assert (let ((.def_0 (< y2 5))) (let ((.def_1 (< 0 y2))) (let ((.def_2 (and .def_1 .def_0))) (let ((.def_3 (= a y2))) (let ((.def_4 (= y1 z))) (let ((.def_5 (not .def_4))) (let ((.def_6 (= a y1))) (let ((.def_7 (and .def_6 .def_5 .def_3 .def_2))) .def_7)))))))))
+(check-sat)
